@@ -1,0 +1,24 @@
+<%- include('basic' , {title : "User_Data"}) -%>
+
+  <br/>
+  <div class="pt-5"></div>
+  <div class="container">
+    <h2>Users Entry in Database</h2>     
+    <table class="table table-hover animated fadeInUp">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      {% if data %}
+          {% for info in data %}
+              <tbody>
+                  <td>{{ info.username }}</td>
+                  <td>{{ info.email }}</td>
+              <tr>
+              </tbody>
+          {% endfor %}
+      {% endif %}
+    </table>
+  </div>

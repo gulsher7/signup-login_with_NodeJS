@@ -1,0 +1,25 @@
+<%- include('basic' , {title : "Log In"}) -%>
+
+
+<div class="pt-5"></div><br/>
+<p class="ml-5"></p>
+<div class="container pt-5">   
+  <form action="#" method="POST" style="max-width:500px;margin:auto"> 
+    <h2>Sign In</h2>
+    <span class="text-danger"></span>
+    <div class="input-container">
+      
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="username" autocomplete="off" required>
+    </div>
+   
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="password" placeholder="Password" name="password" required>
+    </div>
+
+    <div class="text-center pt-3">New member?<a href="/signup" class="text-danger font-weight-bold"> Sign up</a></div>
+    <button type="submit" class="btn btn-primary btn-lg">Register</button>
+  
+  </form>
+  </div>
